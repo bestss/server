@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<allocations>
+    <userMaxAppsDefault>5</userMaxAppsDefault>
+    <queue name="dd_edw">
+        <minResources>233472 mb,50 vcores</minResources>
+        <maxResources>1400832 mb,300 vcores</maxResources>
+        <maxRunningApps>20</maxRunningApps>
+        <schedulingPolicy>fifo</schedulingPolicy>
+        <aclSubmitApps>dd_edw,dd_edw_read</aclSubmitApps>                        
+        <aclAdministerApps>dd_edw,dd_edw_read</aclAdministerApps>
+    </queue>
+    <user name="dd_edw">
+        <maxRunningApps>20</maxRunningApps>
+    </user>
+	<queue name="bdp_jdmp_bm">
+        <minResources>233472 mb,50 vcores</minResources>
+        <maxResources>1400832 mb,300 vcores</maxResources>
+        <maxRunningApps>20</maxRunningApps>
+    </queue>
+    <user name="bdp_jdmp_bm">
+        <maxRunningApps>20</maxRunningApps>
+    </user>
+	<queue name="bdp_jdmp_risk">
+        <minResources>233472 mb,50 vcores</minResources>
+        <maxResources>1400832 mb,300 vcores</maxResources>
+        <maxRunningApps>20</maxRunningApps>
+        <aclSubmitApps>bdp_jdmp_risk</aclSubmitApps>                        
+        <aclAdministerApps>bdp_jdmp_risk</aclAdministerApps>
+    </queue>
+    <user name="bdp_jdmp_risk">
+        <maxRunningApps>20</maxRunningApps>
+    </user>
+    <queue name="bdp_jdmp_recsys">
+        <minResources>233472 mb,50 vcores</minResources>
+        <maxResources>1400832 mb,300 vcores</maxResources>
+        <maxRunningApps>20</maxRunningApps>
+    </queue>
+    <user name="bdp_jdmp_recsys">
+        <maxRunningApps>20</maxRunningApps>
+    </user>
+	<queue name="search">
+        <minResources>233472 mb,50 vcores</minResources>
+        <maxResources>1400832 mb,300 vcores</maxResources>
+        <maxRunningApps>20</maxRunningApps>
+    </queue>
+    <user name="search">
+        <maxRunningApps>20</maxRunningApps>
+    </user>
+	<queue name="spark">
+        <minResources>466944 mb,300 vcores</minResources>
+        <maxResources>3268608 mb,744 vcores</maxResources>
+        <maxRunningApps>20</maxRunningApps>
+    </queue>
+    <user name="spark">
+        <maxRunningApps>20</maxRunningApps>
+    </user>
+	<queue name="ad">
+        <minResources>1400832 mb,300 vcores</minResources>
+        <maxResources>1400832 mb,300 vcores</maxResources>
+        <maxRunningApps>20</maxRunningApps>
+    </queue>
+    <user name="ad">
+        <maxRunningApps>20</maxRunningApps>
+    </user>
+</allocations>

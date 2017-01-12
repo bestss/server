@@ -1,0 +1,846 @@
+2015-04-04 17:14:51
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (20.0-b11 mixed mode):
+
+"693206637@qtp-1022146175-8" daemon prio=10 tid=0x00007f2e4c2cc800 nid=0x2b88 in Object.wait() [0x00007f23c2d66000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:626)
+	- locked <0x00007f2406c10f78> (a org.mortbay.thread.QueuedThreadPool$PoolThread)
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" daemon prio=10 tid=0x0000000040a45000 nid=0x2b87 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Client (1743223201) connection to BJHC-HADOOP-pandora-16776.hadoop.jd.local/172.22.167.76:8485 from hadp" daemon prio=10 tid=0x00007f2e3c487800 nid=0xaa6a in Object.wait() [0x00007f23c100c000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.ipc.Client$Connection.waitForWork(Client.java:845)
+	- locked <0x00007f25559a0000> (a org.apache.hadoop.ipc.Client$Connection)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:890)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Client (1743223201) connection to BJHC-HADOOP-pandora-16775.hadoop.jd.local/172.22.167.75:8485 from hadp" daemon prio=10 tid=0x00007f2e44284000 nid=0xaa69 in Object.wait() [0x00007f23c1647000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.ipc.Client$Connection.waitForWork(Client.java:845)
+	- locked <0x00007f2555cec850> (a org.apache.hadoop.ipc.Client$Connection)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:890)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Client (1743223201) connection to BJHC-HADOOP-pandora-16774.hadoop.jd.local/172.22.167.74:8485 from hadp" daemon prio=10 tid=0x00007f2e4cc3d800 nid=0xaa68 in Object.wait() [0x00007f23c110d000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.ipc.Client$Connection.waitForWork(Client.java:845)
+	- locked <0x00007f25560390a0> (a org.apache.hadoop.ipc.Client$Connection)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:890)
+
+   Locked ownable synchronizers:
+	- None
+
+"Trash Emptier" daemon prio=10 tid=0x00007f2e3c600000 nid=0xa91c waiting on condition [0x00007f23c316a000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.fs.TrashPolicyDefault$Emptier.run(TrashPolicyDefault.java:270)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"org.apache.hadoop.hdfs.server.namenode.FSNamesystem$NameNodeResourceMonitor@37ca4c4" daemon prio=10 tid=0x00007f2e3c53f000 nid=0xa91b waiting on condition [0x00007f23c1546000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem$NameNodeResourceMonitor.run(FSNamesystem.java:4232)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"org.apache.hadoop.hdfs.server.namenode.LeaseManager$Monitor@3052a891" daemon prio=10 tid=0x00007f2e3c3fd000 nid=0xa91a sleeping[0x00007f23c1445000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.LeaseManager$Monitor.run(LeaseManager.java:421)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Logger channel to BJHC-HADOOP-pandora-16776.hadoop.jd.local/172.22.167.76:8485" daemon prio=10 tid=0x00007f2e3c0e0800 nid=0xa889 waiting on condition [0x00007f23c3673000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f25587b2ff8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Logger channel to BJHC-HADOOP-pandora-16775.hadoop.jd.local/172.22.167.75:8485" daemon prio=10 tid=0x00007f2e3c486800 nid=0xa888 waiting on condition [0x00007f23c3572000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f2557592560> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Logger channel to BJHC-HADOOP-pandora-16774.hadoop.jd.local/172.22.167.74:8485" daemon prio=10 tid=0x00007f2e3c0a3000 nid=0xa887 waiting on condition [0x00007f23c3471000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f2556329020> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 2 on 8021" daemon prio=10 tid=0x00007f2e4cc46000 nid=0xa6f5 waiting on condition [0x00007f23c1748000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f255603b5c8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2024)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 1 on 8021" daemon prio=10 tid=0x00007f2e4cc44000 nid=0xa6f4 waiting on condition [0x00007f23c1849000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f255603b5c8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2024)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 0 on 8021" daemon prio=10 tid=0x00007f2e4cc42000 nid=0xa6f3 waiting on condition [0x00007f23c194a000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f255603b5c8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2024)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server listener on 8021" daemon prio=10 tid=0x00007f2e4cc41000 nid=0xa6f2 runnable [0x00007f23c1a4b000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:210)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:65)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x00007f255603b808> (a sun.nio.ch.Util$2)
+	- locked <0x00007f255603b7f0> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x00007f255603b820> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:84)
+	at org.apache.hadoop.ipc.Server$Listener.run(Server.java:693)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server Responder" daemon prio=10 tid=0x00007f2e4c341000 nid=0xa6f1 runnable [0x00007f23c1b4c000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:210)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:65)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x00007f25566d25d8> (a sun.nio.ch.Util$2)
+	- locked <0x00007f25566d25f0> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x00007f25566d2560> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at org.apache.hadoop.ipc.Server$Responder.doRunLoop(Server.java:881)
+	at org.apache.hadoop.ipc.Server$Responder.run(Server.java:864)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 9 on 8020" daemon prio=10 tid=0x00007f2e4c33f000 nid=0xa6f0 in Object.wait() [0x00007f23c1c4c000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:563)
+	- locked <0x00007f25f8fbdd98> (a org.apache.hadoop.hdfs.server.namenode.FSEditLog)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:3332)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInt(FSNamesystem.java:3271)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:3255)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete(NameNodeRpcServer.java:697)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.delete(ClientNamenodeProtocolServerSideTranslatorPB.java:491)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59596)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 8 on 8020" daemon prio=10 tid=0x00007f2e4c33d000 nid=0xa6ef runnable [0x00007f23c1d4d000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.FileChannelImpl.force0(Native Method)
+	at sun.nio.ch.FileChannelImpl.force(FileChannelImpl.java:348)
+	at org.apache.hadoop.hdfs.server.namenode.EditLogFileOutputStream.flushAndSync(EditLogFileOutputStream.java:203)
+	at org.apache.hadoop.hdfs.server.namenode.EditLogOutputStream.flush(EditLogOutputStream.java:113)
+	at org.apache.hadoop.hdfs.server.namenode.EditLogOutputStream.flush(EditLogOutputStream.java:107)
+	at org.apache.hadoop.hdfs.server.namenode.JournalSet$JournalSetOutputStream$8.apply(JournalSet.java:492)
+	at org.apache.hadoop.hdfs.server.namenode.JournalSet.mapJournalsAndReportErrors(JournalSet.java:352)
+	at org.apache.hadoop.hdfs.server.namenode.JournalSet.access$100(JournalSet.java:55)
+	at org.apache.hadoop.hdfs.server.namenode.JournalSet$JournalSetOutputStream.flush(JournalSet.java:488)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:613)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2114)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2047)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:491)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:301)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59570)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 7 on 8020" daemon prio=10 tid=0x00007f2e4c33b800 nid=0xa6ee in Object.wait() [0x00007f23c1e4e000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:563)
+	- locked <0x00007f25f8fbdd98> (a org.apache.hadoop.hdfs.server.namenode.FSEditLog)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:3332)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInt(FSNamesystem.java:3271)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:3255)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete(NameNodeRpcServer.java:697)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.delete(ClientNamenodeProtocolServerSideTranslatorPB.java:491)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59596)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 6 on 8020" daemon prio=10 tid=0x00007f2e4c3a1800 nid=0xa6ed in Object.wait() [0x00007f23c1f4f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:563)
+	- locked <0x00007f25f8fbdd98> (a org.apache.hadoop.hdfs.server.namenode.FSEditLog)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:3332)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInt(FSNamesystem.java:3271)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:3255)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete(NameNodeRpcServer.java:697)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.delete(ClientNamenodeProtocolServerSideTranslatorPB.java:491)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59596)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 5 on 8020" daemon prio=10 tid=0x00007f2e4c39f800 nid=0xa6ec in Object.wait() [0x00007f23c2050000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:563)
+	- locked <0x00007f25f8fbdd98> (a org.apache.hadoop.hdfs.server.namenode.FSEditLog)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2114)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2047)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:491)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:301)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59570)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 4 on 8020" daemon prio=10 tid=0x00007f2e4c39d800 nid=0xa6eb in Object.wait() [0x00007f23c2151000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:563)
+	- locked <0x00007f25f8fbdd98> (a org.apache.hadoop.hdfs.server.namenode.FSEditLog)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:3332)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInt(FSNamesystem.java:3271)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:3255)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete(NameNodeRpcServer.java:697)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.delete(ClientNamenodeProtocolServerSideTranslatorPB.java:491)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59596)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 3 on 8020" daemon prio=10 tid=0x00007f2e4c330800 nid=0xa6ea in Object.wait() [0x00007f23c2252000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:563)
+	- locked <0x00007f25f8fbdd98> (a org.apache.hadoop.hdfs.server.namenode.FSEditLog)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2114)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2047)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:491)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:301)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59570)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 2 on 8020" daemon prio=10 tid=0x00007f2e4c32e800 nid=0xa6e9 in Object.wait() [0x00007f23c2353000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:563)
+	- locked <0x00007f25f8fbdd98> (a org.apache.hadoop.hdfs.server.namenode.FSEditLog)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameToInt(FSNamesystem.java:3129)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo(FSNamesystem.java:3085)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rename(NameNodeRpcServer.java:665)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.rename(ClientNamenodeProtocolServerSideTranslatorPB.java:467)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59592)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 1 on 8020" daemon prio=10 tid=0x00007f2e4c32c800 nid=0xa6e8 in Object.wait() [0x00007f23c2454000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:563)
+	- locked <0x00007f25f8fbdd98> (a org.apache.hadoop.hdfs.server.namenode.FSEditLog)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:3332)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInt(FSNamesystem.java:3271)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:3255)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete(NameNodeRpcServer.java:697)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.delete(ClientNamenodeProtocolServerSideTranslatorPB.java:491)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59596)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 0 on 8020" daemon prio=10 tid=0x00007f2e4c32a800 nid=0xa6e5 in Object.wait() [0x00007f23c2555000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync(FSEditLog.java:563)
+	- locked <0x00007f25f8fbdd98> (a org.apache.hadoop.hdfs.server.namenode.FSEditLog)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:3332)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInt(FSNamesystem.java:3271)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:3255)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete(NameNodeRpcServer.java:697)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.delete(ClientNamenodeProtocolServerSideTranslatorPB.java:491)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59596)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server listener on 8020" daemon prio=10 tid=0x00007f2e4c329800 nid=0xa6e3 runnable [0x00007f23c2657000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:210)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:65)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x00007f2557750c28> (a sun.nio.ch.Util$2)
+	- locked <0x00007f2557750c10> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x00007f2557750c40> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:84)
+	at org.apache.hadoop.ipc.Server$Listener.run(Server.java:693)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server Responder" daemon prio=10 tid=0x00007f2e4c38f000 nid=0xa6e2 runnable [0x00007f23c2758000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:210)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:65)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x00007f25559a2920> (a sun.nio.ch.Util$2)
+	- locked <0x00007f25559a2908> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x00007f25559a2938> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at org.apache.hadoop.ipc.Server$Responder.doRunLoop(Server.java:881)
+	at org.apache.hadoop.ipc.Server$Responder.run(Server.java:864)
+
+   Locked ownable synchronizers:
+	- None
+
+"org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$ReplicationMonitor@4145b02f" daemon prio=10 tid=0x00007f2e4c399000 nid=0xa6e1 sleeping[0x00007f23c2859000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$ReplicationMonitor.run(BlockManager.java:3114)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager$Monitor@5aa45a24" daemon prio=10 tid=0x00007f2e4c398800 nid=0xa6e0 waiting on condition [0x00007f23c295a000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager$Monitor.run(HeartbeatManager.java:295)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager$Monitor@3c66a2be" daemon prio=10 tid=0x00007f2e4c2e4800 nid=0xa6df waiting on condition [0x00007f23c336c000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager$Monitor.run(DecommissionManager.java:76)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"org.apache.hadoop.hdfs.server.blockmanagement.PendingReplicationBlocks$PendingReplicationMonitor@35569182" daemon prio=10 tid=0x00007f2e4c2e4000 nid=0xa6de waiting on condition [0x00007f23c326b000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.blockmanagement.PendingReplicationBlocks$PendingReplicationMonitor.run(PendingReplicationBlocks.java:221)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Socket Reader #1 for port 8020" prio=10 tid=0x00007f2e4c335800 nid=0xa6da waiting on condition [0x00007f23c2a63000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f2557a9d3e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.put(LinkedBlockingQueue.java:306)
+	at org.apache.hadoop.ipc.Server$Connection.processRpcRequest(Server.java:1881)
+	at org.apache.hadoop.ipc.Server$Connection.processOneRpc(Server.java:1800)
+	at org.apache.hadoop.ipc.Server$Connection.readAndProcess(Server.java:1560)
+	at org.apache.hadoop.ipc.Server$Listener.doRead(Server.java:792)
+	at org.apache.hadoop.ipc.Server$Listener$Reader.doRunLoop(Server.java:591)
+	- locked <0x00007f2557a9d320> (a org.apache.hadoop.ipc.Server$Listener$Reader)
+	at org.apache.hadoop.ipc.Server$Listener$Reader.run(Server.java:566)
+
+   Locked ownable synchronizers:
+	- None
+
+"Socket Reader #1 for port 8021" prio=10 tid=0x00007f2e4cb7b000 nid=0xa6d9 runnable [0x00007f23c3e9b000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:210)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:65)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x00007f25566d2c30> (a sun.nio.ch.Util$2)
+	- locked <0x00007f25566d2c18> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x00007f25566d2c48> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:84)
+	at org.apache.hadoop.ipc.Server$Listener$Reader.doRunLoop(Server.java:580)
+	- locked <0x00007f25566d2b08> (a org.apache.hadoop.ipc.Server$Listener$Reader)
+	at org.apache.hadoop.ipc.Server$Listener$Reader.run(Server.java:566)
+
+   Locked ownable synchronizers:
+	- None
+
+"720685641@qtp-1022146175-5" daemon prio=10 tid=0x00007f2e4c2ce800 nid=0xa4e5 in Object.wait() [0x00007f23c2b64000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:626)
+	- locked <0x00007f25fb4de888> (a org.mortbay.thread.QueuedThreadPool$PoolThread)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Parameter Sending Thread #2" daemon prio=10 tid=0x00007f2e3c4a6000 nid=0x9c1c waiting on condition [0x00007f23c2e67000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f25dc041738> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:198)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:874)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:945)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Parameter Sending Thread #1" daemon prio=10 tid=0x00007f2e44514800 nid=0x9c1b waiting on condition [0x00007f23c2f68000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f25dc041738> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:198)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:874)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:945)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Parameter Sending Thread #0" daemon prio=10 tid=0x00007f2e4ccfc000 nid=0x9c14 waiting on condition [0x00007f23c3069000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f25dc041738> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:198)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:874)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:945)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Timer-0" daemon prio=10 tid=0x00007f2e4cc00000 nid=0x9bfb in Object.wait() [0x00007f23c3883000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.util.TimerThread.mainLoop(Timer.java:509)
+	- locked <0x00007f25dc048aa0> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Timer.java:462)
+
+   Locked ownable synchronizers:
+	- None
+
+"1266620481@qtp-1022146175-1 - Acceptor0 SelectChannelConnector@BJHC-HADOOP-pandora-16777.hadoop.jd.local:50070" daemon prio=10 tid=0x00007f2e4cc1c800 nid=0x9bfa runnable [0x00007f23c3984000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:210)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:65)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x00007f25dc02ed40> (a sun.nio.ch.Util$2)
+	- locked <0x00007f25dc02ed58> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x00007f25dc02d010> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at org.mortbay.io.nio.SelectorManager$SelectSet.doSelect(SelectorManager.java:498)
+	at org.mortbay.io.nio.SelectorManager.doSelect(SelectorManager.java:192)
+	at org.mortbay.jetty.nio.SelectChannelConnector.accept(SelectChannelConnector.java:124)
+	at org.mortbay.jetty.AbstractConnector$Acceptor.run(AbstractConnector.java:708)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+
+   Locked ownable synchronizers:
+	- None
+
+"Timer for 'NameNode' metrics system" daemon prio=10 tid=0x00007f2e4cbee800 nid=0x9bf8 in Object.wait() [0x00007f23c3d9a000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.util.TimerThread.mainLoop(Timer.java:509)
+	- locked <0x00007f25dc02eb40> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Timer.java:462)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 2 on 26717" daemon prio=10 tid=0x00007f2e4cbb8800 nid=0x9bf3 waiting on condition [0x00007f23c3f9c000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f25dc0438a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2024)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 1 on 26717" daemon prio=10 tid=0x00007f2e4cad7800 nid=0x9bf2 waiting on condition [0x00007f23c409d000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f25dc0438a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2024)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server handler 0 on 26717" daemon prio=10 tid=0x00007f2e4cad6800 nid=0x9bf1 waiting on condition [0x00007f23c419e000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00007f25dc0438a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2024)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server listener on 26717" daemon prio=10 tid=0x00007f2e4caef800 nid=0x9bf0 runnable [0x00007f23c429f000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:210)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:65)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x00007f25dc0445a0> (a sun.nio.ch.Util$2)
+	- locked <0x00007f25dc0445b8> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x00007f25dc036c30> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:84)
+	at org.apache.hadoop.ipc.Server$Listener.run(Server.java:693)
+
+   Locked ownable synchronizers:
+	- None
+
+"IPC Server Responder" daemon prio=10 tid=0x00007f2e4cb3d000 nid=0x9bef runnable [0x00007f23c43a0000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:210)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:65)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x00007f25dc032168> (a sun.nio.ch.Util$2)
+	- locked <0x00007f25dc032180> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x00007f25dc0364b0> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at org.apache.hadoop.ipc.Server$Responder.doRunLoop(Server.java:881)
+	at org.apache.hadoop.ipc.Server$Responder.run(Server.java:864)
+
+   Locked ownable synchronizers:
+	- None
+
+"Socket Reader #1 for port 26717" prio=10 tid=0x00007f2e4cb31800 nid=0x9bec runnable [0x00007f23c44a1000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+	at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:210)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:65)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x00007f25dc049020> (a sun.nio.ch.Util$2)
+	- locked <0x00007f25dc049038> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x00007f25dc046b20> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:84)
+	at org.apache.hadoop.ipc.Server$Listener$Reader.doRunLoop(Server.java:580)
+	- locked <0x00007f25dc034700> (a org.apache.hadoop.ipc.Server$Listener$Reader)
+	at org.apache.hadoop.ipc.Server$Listener$Reader.run(Server.java:566)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-0" daemon prio=10 tid=0x00007f2e4ca92000 nid=0x9bc7 runnable [0x00007f23c47ab000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:408)
+	- locked <0x00007f25dc04f750> (a java.net.SocksSocketImpl)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:462)
+	at java.net.ServerSocket.accept(ServerSocket.java:430)
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:34)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:369)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:341)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Low Memory Detector" daemon prio=10 tid=0x00007f2e4c31f000 nid=0x9bc6 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" daemon prio=10 tid=0x00007f2e4c31c800 nid=0x9bc5 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" daemon prio=10 tid=0x00007f2e4c31a000 nid=0x9bc4 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" daemon prio=10 tid=0x00007f2e4c318000 nid=0x9bc3 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Surrogate Locker Thread (Concurrent GC)" daemon prio=10 tid=0x00007f2e4c316000 nid=0x9bc2 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" daemon prio=10 tid=0x00007f2e4c2fa000 nid=0x9bc1 in Object.wait() [0x00007f23cb440000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x00007f25dc032198> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:159)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" daemon prio=10 tid=0x00007f2e4c2f8000 nid=0x9bc0 in Object.wait() [0x00007f23cb541000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:485)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:116)
+	- locked <0x00007f25dc03afc0> (a java.lang.ref.Reference$Lock)
+
+   Locked ownable synchronizers:
+	- None
+
+"main" prio=10 tid=0x00007f2e4c00d000 nid=0x9ba0 in Object.wait() [0x00007f2e532f3000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00007f2555cef190> (a org.apache.hadoop.ipc.ProtobufRpcEngine$Server)
+	at java.lang.Object.wait(Object.java:485)
+	at org.apache.hadoop.ipc.Server.join(Server.java:2464)
+	- locked <0x00007f2555cef190> (a org.apache.hadoop.ipc.ProtobufRpcEngine$Server)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.join(NameNodeRpcServer.java:353)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.join(NameNode.java:712)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1334)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" prio=10 tid=0x00007f2e4c2f1800 nid=0x9bbf runnable 
+
+"Gang worker#0 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c01c000 nid=0x9ba1 runnable 
+
+"Gang worker#1 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c01e000 nid=0x9ba2 runnable 
+
+"Gang worker#2 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c01f800 nid=0x9ba3 runnable 
+
+"Gang worker#3 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c021800 nid=0x9ba4 runnable 
+
+"Gang worker#4 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c023800 nid=0x9ba5 runnable 
+
+"Gang worker#5 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c025000 nid=0x9ba6 runnable 
+
+"Gang worker#6 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c027000 nid=0x9ba7 runnable 
+
+"Gang worker#7 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c029000 nid=0x9ba8 runnable 
+
+"Gang worker#8 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c02a800 nid=0x9ba9 runnable 
+
+"Gang worker#9 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c02c800 nid=0x9baa runnable 
+
+"Gang worker#10 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c02e800 nid=0x9bab runnable 
+
+"Gang worker#11 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c030000 nid=0x9bac runnable 
+
+"Gang worker#12 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c032000 nid=0x9bad runnable 
+
+"Gang worker#13 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c033800 nid=0x9bae runnable 
+
+"Gang worker#14 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c035800 nid=0x9baf runnable 
+
+"Gang worker#15 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c037800 nid=0x9bb0 runnable 
+
+"Gang worker#16 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c039000 nid=0x9bb1 runnable 
+
+"Gang worker#17 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c03b000 nid=0x9bb2 runnable 
+
+"Gang worker#18 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c03d000 nid=0x9bb3 runnable 
+
+"Gang worker#19 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c03e800 nid=0x9bb4 runnable 
+
+"Gang worker#20 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c040800 nid=0x9bb5 runnable 
+
+"Gang worker#21 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c042800 nid=0x9bb6 runnable 
+
+"Gang worker#22 (Parallel GC Threads)" prio=10 tid=0x00007f2e4c044000 nid=0x9bb7 runnable 
+
+"Concurrent Mark-Sweep GC Thread" prio=10 tid=0x00007f2e4c2aa800 nid=0x9bbe runnable 
+"Gang worker#0 (Parallel CMS Threads)" prio=10 tid=0x00007f2e4c29e800 nid=0x9bb8 runnable 
+
+"Gang worker#1 (Parallel CMS Threads)" prio=10 tid=0x00007f2e4c2a0800 nid=0x9bb9 runnable 
+
+"Gang worker#2 (Parallel CMS Threads)" prio=10 tid=0x00007f2e4c2a2800 nid=0x9bba runnable 
+
+"Gang worker#3 (Parallel CMS Threads)" prio=10 tid=0x00007f2e4c2a4000 nid=0x9bbb runnable 
+
+"Gang worker#4 (Parallel CMS Threads)" prio=10 tid=0x00007f2e4c2a6000 nid=0x9bbc runnable 
+
+"Gang worker#5 (Parallel CMS Threads)" prio=10 tid=0x00007f2e4c2a7800 nid=0x9bbd runnable 
+
+"VM Periodic Task Thread" prio=10 tid=0x00007f2e4caa5800 nid=0x9bc8 waiting on condition 
+
+JNI global references: 932
+

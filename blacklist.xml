@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+  <property>
+    <ip>default</ip>
+    <user>default</user>
+    <description>负责人: default</description>
+  </property>
+</configuration>
