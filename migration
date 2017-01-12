@@ -1,3 +1,2 @@
 echo "hello"
 hostname -i
-cp $HADOOP_CONF_DIR/* .
